@@ -15,6 +15,16 @@
 	<song - Tonight, Tonight>, <song - Bullet With Butterfly Wings>, 
 	<song - Rooster>, <song - Would?>, <song - Man In The Box>, 
 	<song - Black Hole Sun>, <song - Been Away Too Long>]
+
+
+"type=artist-radio" even makes this small logical snippet waste - ridiculous :)
+>>> liste = playlist.static(type='artist-radio', artist_pick='song_hotttnesss-desc', 
+				artist="Foo Fighters", song_min_hotttnesss=0.6, results=10)
+>>> liste
+[<song - All My Life>, <song - Show Me How To Live>, 
+	<song - Come As You Are>, <song - You're Gonna Go Far, Kid>, 
+	<song - Even Flow>, <song - Never Let You Go>, <song - Shine>, 
+	<song - You Know My Name>, <song - Far Behind>, <song - Hunger Strike>]
 '''
 
 import sys
