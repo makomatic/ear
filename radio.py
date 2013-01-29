@@ -1,3 +1,22 @@
+# everything achivable with playlist class ;)
+'''
+>>> liste = playlist.static(type='artist', artist_pick='song_hotttnesss-desc', 
+				artist="Foo Fighters", song_min_hotttnesss=0.7, results=5)
+>>> for result in artist.Artist("Foo Fighters").similar:
+...     liste=liste+playlist.static(type='artist', artist_pick='song_hotttnesss-desc', 
+				artist=result, song_min_hotttnesss=0.7, results=5)
+... 
+>>> liste
+[<song - All My Life>, <song - Learn To Fly>, <song - These Days>, 
+	<song - Best Of You>, <song - Times Like These>, <song - About A Girl>, 
+	<song - Come As You Are>, <song - All Apologies>, <song - Rape Me>, 
+	<song - In Bloom>, <song - Like A Stone>, <song - Alive>, <song - Black>, 
+	<song - Jeremy>, <song - Even Flow>, <song - Today>, <song - 1979>, 
+	<song - Tonight, Tonight>, <song - Bullet With Butterfly Wings>, 
+	<song - Rooster>, <song - Would?>, <song - Man In The Box>, 
+	<song - Black Hole Sun>, <song - Been Away Too Long>]
+'''
+
 import sys
 from pyechonest import config, song, artist
 
