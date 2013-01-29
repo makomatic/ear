@@ -1,4 +1,5 @@
 from pyechonest import config, song, artist
+config.ECHO_NEST_API_KEY=""
 
 art = str( raw_input("Interpret: ") )
 tit = str( raw_input("Titel: ") )
